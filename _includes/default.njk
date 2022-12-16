@@ -2,14 +2,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="assets/styles.css">
-        <title>it&#39;s a page</title>
+        <title>{{ title }}</title>
     </head>
 
     <body>
 
-        <h1> it&#39;s a page </h1>
-        <h1>it's a homepage !</h1>
-<p>oogie boogie</p>
-
+        <h1> {{ title }} </h1>
+        {{ content | safe }}
     </body>
 </html>
