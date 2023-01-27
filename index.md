@@ -8,7 +8,9 @@ title: it's a page
 oogie boogie 
 
 
-
+<p>
+	![my image]()
+</p>
 
 
 
