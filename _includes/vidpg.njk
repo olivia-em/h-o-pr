@@ -1,0 +1,76 @@
+---
+layout: base.njk
+---
+
+
+<!DOCTYPE html>
+
+<html>
+<body class="wrapper">
+ <head>
+        <base href="/">
+<link rel="stylesheet" type="text/css" href="assets/styles.css">
+    </head>
+ <header class="header" style="text-align: center; margin-top: 30px;">
+        <span class="links container">
+          <a class="a" href="/index">Home</a>
+          <span class="divider"></span>
+          <span class="divider"></span>
+          <a class="a" href="/about">About</a>
+          <span class="divider"></span>
+          <span class="divider"></span>
+          <a class="a" href="/credits">Credits</a>
+          </span>
+          <img style="height: 30px; width: 30px; float: right; margin-right: 40px;" src="/assets/icons/noun-globe-4761576.svg"/>
+      </header>
+      <div style="border-bottom: 4px solid #ffffff;"></div>
+      <main>
+    <div class="iframe container">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/U2IOtuldxTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="container">
+
+        <h1 style="margin-top: 0px; margin-bottom: 5px"><strong>hello</strong></h1>
+        <h2 style="margin-top: 0px;"><i>blah blah blah</i></h2>
+        <br>
+        <h4> {{ description }} </h4>
+        <br></br>
+        <h3>Transcript</h3>
+        <h4 class="textbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </h4>
+        <br></br>
+        <img src="{{ image_1 }}" />
+        <img src="{{ image_2 }}" />
+        <img src="{{ image_3 }}" />
+        <img src="{{ image_4 }}" />
+
+    </div>
+<!-- # social media buttons -->
+
+<div class="container">
+    <img style="height: 48px; width: 48px" src="/assets/icons/noun-social-media-5453001.svg" />
+</div>
+
+ </main>
+
+    <div class="controls prevnext footer" style="align-content: center;">
+
+    {# The previous and next post data is added in .eleventy.js #}
+
+    <!-- {% if prevVid.url %} -->
+      <h3 class="prev">
+        <a class="a" href="{{ prevVid.url }}">Previous</a>
+      </h3>
+    <!-- {% endif %} -->
+      <span>" "</span>
+      <span>" "</span>
+      <span>" "</span>
+    <!-- {% if nextVid.url %} -->
+      <h3 class="next">
+        <a class="a" href="{{ nextVid.url }}">Next</a>
+      </h3>
+    <!-- {% endif %} -->
+   
+    </div>
+</body>
+</html>
