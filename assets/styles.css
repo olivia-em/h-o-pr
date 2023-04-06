@@ -310,7 +310,6 @@ img.poster {
 
 div.about_imgs {
   text-align: center;
-  display: inline-block;
   align-items: center;
   flex-wrap: wrap;
   padding: 5px;
