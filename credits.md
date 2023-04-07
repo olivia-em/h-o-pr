@@ -1,8 +1,0 @@
----
-layout: credits
-title: credits
----
-
-
-
-
