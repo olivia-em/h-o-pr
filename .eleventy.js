@@ -23,7 +23,7 @@ eleventyConfig.addCollection("videos", function(videos) {
     })
 
 return {
-  pathPrefix: "/eleventy-testing/"
+  pathPrefix: "/h-o-pr/"
 }
 
 };
