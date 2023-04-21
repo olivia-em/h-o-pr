@@ -55,13 +55,6 @@ a:not(.btn--remix):visited {
   display: inline-block;
   position: relative;
 }
-/*
-.footer a:hover {
-  background: #64605F;
-  border-radius: 10px;
-  padding: 5px;
-  position: absolute;
-}*/
 
 .header a:not(.btn--remix):link,
 a:not(.btn--remix):visited {
