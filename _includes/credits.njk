@@ -5,12 +5,12 @@ layout: base.njk
 <!DOCTYPE html>
 
 <html>
-<body class="wrapper">
+<body>
 <main>
  <header style="text-align: center;">
  <br>
     <div class="container">
-    <a class="a" href="/credits-sp">
+    <a class="a" href="{{ '/credits-sp' | url }}">
     <img style="height: 30px; width: 30px; float: right; margin-right: 40px;" src="/assets/icons/noun-globe-4761576.svg"/></a>
     </div> 
     <br>
@@ -25,10 +25,10 @@ layout: base.njk
 
 <footer class="footer" style="text-align: center;">
         <div class="links">
-          <a class="a" href="/">Home</a>
+          <a class="a" href="{{ '/' | url }}">Home</a>
           <span class="divider"></span>
           <span class="divider"></span>
-          <a class="a" href="/about">About</a>
+          <a class="a" href="{{ '/about' | url }}">About</a>
       </footer>
       </main>
 </body>

@@ -22,11 +22,7 @@ eleventyConfig.addCollection("videos", function(videos) {
        return vd;
     })
 
-return {
-  pathPrefix: "/h-o-pr/"
 }
-
-};
 
 
 
