@@ -9,15 +9,15 @@ layout: base.njk
 <body>
  <header class="header" style="text-align: center; margin-top: 30px;">
         <span class="links container">
-          <a class="a" href="{{ '/' | url }}">Home</a>
+          <a class="a" href="/">Home</a>
           <span class="divider"></span>
           <span class="divider"></span>
-          <a class="a" href="{{ '/about' | url }}">About</a>
+          <a class="a" href="/about">About</a>
           <span class="divider"></span>
           <span class="divider"></span>
-          <a class="a" href="{{ '/credits' | url }}">Credits</a>
+          <a class="a" href="/credits">Credits</a>
           </span>
-          <a class="a" href="{{ '' | url }}">
+          <a class="a" href="">
           <img style="height: 30px; width: 30px; float: right; margin-right: 40px;" src="/assets/icons/noun-globe-4761576.svg"/></a>
       </header>
       <div style="border-bottom: 4px solid #ffffff;"></div>
@@ -44,7 +44,7 @@ layout: base.njk
 <!-- # social media buttons -->
 
 <div class="container">
-    <a class="a" href="{{ '{{social-media-link}}' | url }}"><img style="height: 48px; width: 48px" src="/assets/icons/noun-social-media-5453001.svg"/></a>
+    <a class="a" href="{{social-media-link}}"><img style="height: 48px; width: 48px" src="/assets/icons/noun-social-media-5453001.svg"/></a>
 </div>
 
  </main>
@@ -55,7 +55,7 @@ layout: base.njk
 
     <!-- {% if prevVid.url %} -->
       <h3 class="prev">
-        <a class="a" href="{{ '{{ prevVid.url }}' | url }}">Previous</a>
+        <a class="a" href="{{ prevVid.url }}">Previous</a>
       </h3>
     <!-- {% endif %} -->
       <span>" "</span>
@@ -63,7 +63,7 @@ layout: base.njk
       <span>" "</span>
     <!-- {% if nextVid.url %} -->
       <h3 class="next">
-        <a class="a" href="{{ '{{ nextVid.url }}' | url }}">Next</a>
+        <a class="a" href="{{ nextVid.url }}">Next</a>
       </h3>
     <!-- {% endif %} -->
    
