@@ -23,18 +23,18 @@ layout: base.njk
       <div style="border-bottom: 4px solid #ffffff;"></div>
       <main>
     <div class="iframe container">
-        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/U2IOtuldxTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="responsive-iframe" src="{{ youtube-link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="container">
 
-        <h1 style="margin-top: 0px; margin-bottom: 5px"><strong>hello</strong></h1>
-        <h2 style="margin-top: 0px;"><i>blah blah blah</i></h2>
+        <h1 style="margin-top: 0px; margin-bottom: 5px"><strong>{{ artist-name }}</strong></h1>
+        <h2 style="margin-top: 0px;"><i>{{ recording-date }}</i></h2>
         <br>
-        <h4> {{ description }} </h4>
+        <h4> {{ description-eng }} </h4>
         <br></br>
         <h3>Transcript</h3>
-        <h4 class="textbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </h4>
+        <h4 class="textbox">{{ transcript-eng }}</h4>
         <br></br>
         <img src="{{ image-filename-1 }}" />
         <img src="{{ image-filename-2 }}" />
