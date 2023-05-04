@@ -28,9 +28,7 @@ body {
 }
 
 .header {
-/*  display: flex;*/
   justify-content: center;
-/*  flex-wrap: wrap;*/
   background: #000000;
   margin-bottom: 30px;
 }
@@ -162,18 +160,6 @@ main.container {
   margin: 0px;
 }
 
-/*img {
-  display: inline-block;
-  margin-left: 15 px;
-  margin-right: 15 px;
-  max-width: 400 px;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-  margin-upper: 15 px;
-  margin-bottom: 15 px;
-}*/
-
 img.vids {
   display: inline-block;
   margin-left: 15 px;
@@ -214,6 +200,7 @@ h2 {
 	text-align: center;
 	font-family: arial;
 	font-size: 12pt;
+  font-weight: 400;
 }
 
 h3 {
@@ -221,6 +208,7 @@ h3 {
   text-align: center;
   font-family: arial;
   font-size: 14pt;
+  font-weight: 400;
 }
 
 h4 {
@@ -231,6 +219,7 @@ h4 {
   font-family: arial;
   text-align: center;
   max-width: 1000px;
+  font-weight: 400;
 }
 
 h4.textbox {
@@ -290,27 +279,30 @@ img.awards {
 }
 
 img.poster {
-  width: 100%;
-  height: auto;
-  max-width: 400px;
-  max-height: 550px;
+  width: auto;
+  height: 100%;
+  max-width: ;
+  max-height: 500px;
   display: inline-block;
   align-items: center;
   flex-wrap: wrap;
   padding: 5px;
   margin: 0px;
+  text-align: center;
+  justify-content: center;
 }
 
-div.about_imgs {
+/*div.about_imgs {
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 5px;
   margin: 0px;
 }
+*/
 
 div.awards {
-  width: 600px;
+  width: 100%;
   margin: 0px;
   display: inline-block;
   align-items: center;
@@ -318,8 +310,6 @@ div.awards {
   padding: 5px;
 }
 
-div.poster {
-}
 
 
 
