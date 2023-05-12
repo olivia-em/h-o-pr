@@ -35,5 +35,8 @@ title: credits
 <br>Stewart Varner, (title) 
 <br>Cassandra Hradil, (title)
 <br>Olivia Lee, (title)
+<br>Cecilia Gonzalez Godino, Translator
 </h4>
 <br>
+
+

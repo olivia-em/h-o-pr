@@ -1,7 +1,5 @@
 ---
 layout: base.njk
-collections: ["english"]
-tags: english
 ---
 
 
@@ -51,22 +49,15 @@ tags: english
 <br></br>
  </main>
 
-    <div class="controls prevnext footer" style="text-align: center; display: grid; margin-bottom: 0px;">
-
-     {# The previous and next post data is added in .eleventy.js #}
-
-    <!-- {% if prevPage.url %} -->
-      <h3 class="prev">
-        <a class="a" href="{{ prevPage.url }}">{{ prevPage.artist_en.artist_name }}</a>
-      </h3>
-    <!-- {% endif %} -->
+     <div class="controls prevnext footer" style="text-align: center; display: grid; margin-bottom: 0px; padding: 0px;">
+     <div class="links">
+  <h3>
+        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}
+    
       <span class="divider"></span>
-    <!-- {% if nextPage.permalink %} -->
-      <h3 class="next">
-        <a class="a" href="{{ nextPage.url }}">{{ nextPage.artist_en.artist_name }}</a>
+        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}
       </h3>
-    <!-- {% endif %} -->
-   
+    </div>
     </div>
 </body>
 </html>

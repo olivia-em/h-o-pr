@@ -170,19 +170,6 @@ img.vids {
   margin: 3 rem 0 2 rem;
 }
 
-.prev {
-  justify-content: left;
-}
-
-.next {
-  justify-content: right;
-}
-
-.prevnext {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-}
 
 h1 {
 	color: #ffffff;
