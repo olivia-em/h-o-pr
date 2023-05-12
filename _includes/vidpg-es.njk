@@ -1,0 +1,73 @@
+---
+layout: base.njk
+collections: ["spanish"]
+tags: spanish
+---
+
+
+<!DOCTYPE html>
+
+<html>
+<body>
+<header class="header" style="text-align: center; display: grid; margin-bottom: 0px">
+        <span class="links container" style="margin-bottom: 5px">
+          <a class="a" href="/index-es">Home</a>
+          <span class="divider"></span>
+          <span class="divider"></span>
+          <a class="a" href="/about-es">About</a>
+          <span class="divider"></span>
+          <span class="divider"></span>
+          <a class="a" href="/credits-es">Credits</a>
+          </span>
+      </header>
+      <div style="border-bottom: 4px solid #ffffff;"></div>
+      <main>
+    <div class="iframe container">
+        <iframe class="responsive-iframe" src="{{ artist_es.youtube_embed_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="container">
+
+       {{ content | safe }}
+        <br></br>
+        <img class="awards" src="{{ artist_es.image_filename_1 }}" />
+        <!-- {% if artist_es.image_filename_2 %} -->
+        <img class="awards" src="{{ artist_es.image_filename_2 }}" />
+        <!-- {% endif %} -->
+        <!-- {% if artist_es.image_filename_3 %} -->
+        <img class="awards" src="{{ artist_es.image_filename_3 }}" />
+        <!-- {% endif %} -->
+
+    </div>
+    <br></br>
+<!-- # social media buttons -->
+
+<div class="container">
+    <a class="a" href="{{ artist_es.social_media_link }}"><img style="height: 48px; width: 48px" src="/assets/icons/noun-social-media-5453001.svg"/></a>
+ <span class="divider"></span>
+    <a class="a" style="margin-top: 15px;" href="{{ artist_es.page_path_eng }}">
+          <img style="height: 30px; width: 30px;" src="/assets/icons/noun-globe-4761576.svg"/></a>
+</div>
+br></br>
+
+ </main>
+
+     <div class="controls prevnext footer" style="text-align: center; display: grid; margin-bottom: 0px">
+
+    {# The previous and next post data is added in .eleventy.js #}
+
+    <!-- {% if prevPage.url %} -->
+      <h3 class="prev">
+        <a class="a" href="{{ prevPage.url }}">{{ prevPage.artist_es.artist_name }}</a>
+      </h3>
+    <!-- {% endif %} -->
+      <span>|</span>
+    <!-- {% if nextPage.url %} -->
+      <h3 class="next">
+        <a class="a" href="{{ prevPage.url }}">{{ nextPage.artist_es.artist_name }}</a>
+      </h3>
+    <!-- {% endif %} -->
+   
+    </div>
+</body>
+</html>

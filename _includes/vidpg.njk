@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+collections: ["english"]
+tags: english
 ---
 
 
@@ -8,8 +10,6 @@ layout: base.njk
 <html>
 <body>
  <header class="header" style="text-align: center; display: grid; margin-bottom: 0px">
-        <a class="a" style="margin-top: 15px;" href="">
-          <img style="height: 30px; width: 30px;" src="/assets/icons/noun-globe-4761576.svg"/></a>
         <span class="links container" style="margin-bottom: 5px">
           <a class="a" href="/">Home</a>
           <span class="divider"></span>
@@ -23,47 +23,47 @@ layout: base.njk
       <div style="border-bottom: 4px solid #ffffff;"></div>
       <main>
     <div class="iframe container">
-        <iframe class="responsive-iframe" src="{{ youtube-link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="responsive-iframe" src="{{ artist_en.youtube_embed_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <div class="container">
 
-        <h1 style="margin-top: 0px; margin-bottom: 5px"><strong>{{ artist-name }}</strong></h1>
-        <h2 style="margin-top: 0px;"><i>{{ recording-date }}</i></h2>
-        <br>
-        <h4> {{ description-eng }} </h4>
+        {{ content | safe }}
         <br></br>
-        <h3>Transcript</h3>
-        <h4 class="textbox">{{ transcript-eng }}</h4>
-        <br></br>
-        <img src="{{ image-filename-1 }}" />
-        <img src="{{ image-filename-2 }}" />
-        <img src="{{ image-filename-3 }}" />
+        <img class="awards" src="{{ artist_en.image_filename_1 }}" />
+        <!-- {% if artist_en.image_filename_2 %} -->
+        <img class="awards" src="{{ artist_en.image_filename_2 }}" />
+        <!-- {% endif %} -->
+        <!-- {% if artist_en.image_filename_3 %} -->
+        <img class="awards" src="{{ artist_en.image_filename_3 }}" />
+        <!-- {% endif %} -->
 
     </div>
+    <br></br>
 <!-- # social media buttons -->
 
 <div class="container">
-    <a class="a" href="{{social-media-link}}"><img style="height: 48px; width: 48px" src="/assets/icons/noun-social-media-5453001.svg"/></a>
+    <a class="a" href="{{ artist_en.social_media_link }}"><img style="height: 48px; width: 48px" src="/assets/icons/noun-social-media-5453001.svg"/></a>
+  <span class="divider"></span>
+    <a class="a" style="margin-top: 15px;" href="{{ artist_en.page_path_sp }}">
+          <img style="height: 30px; width: 30px;" src="/assets/icons/noun-globe-4761576.svg"/></a>
 </div>
-
+<br></br>
  </main>
 
-    <div class="controls prevnext footer" style="align-content: center;">
+    <div class="controls prevnext footer" style="text-align: center; display: grid; margin-bottom: 0px;">
 
-    {# The previous and next post data is added in .eleventy.js #}
+     {# The previous and next post data is added in .eleventy.js #}
 
-    <!-- {% if prevVid.url %} -->
+    <!-- {% if prevPage.url %} -->
       <h3 class="prev">
-        <a class="a" href="{{ prevVid.url }}">Previous</a>
+        <a class="a" href="{{ prevPage.url }}">{{ prevPage.artist_en.artist_name }}</a>
       </h3>
     <!-- {% endif %} -->
-      <span>" "</span>
-      <span>" "</span>
-      <span>" "</span>
-    <!-- {% if nextVid.url %} -->
+      <span class="divider"></span>
+    <!-- {% if nextPage.permalink %} -->
       <h3 class="next">
-        <a class="a" href="{{ nextVid.url }}">Next</a>
+        <a class="a" href="{{ nextPage.url }}">{{ nextPage.artist_en.artist_name }}</a>
       </h3>
     <!-- {% endif %} -->
    
