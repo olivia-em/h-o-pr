@@ -16,6 +16,6 @@ order: {{ artist_es.order }}
         <br>
         <h4 class="textbox"> {{ artist_es.description_sp }} </h4>
         <br>
-        <h3><strong>Transcript</strong></h3>
-        <h4 class="textbox">{{ artist_es.transcript_sp }}</h4>
+        <!-- <h3><strong>Transcript</strong></h3>
+        <h4 class="textbox">{{ artist_es.transcript_sp }}</h4> -->
        
