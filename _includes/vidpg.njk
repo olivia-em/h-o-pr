@@ -51,9 +51,9 @@ layout: base.njk
 
      <div class="controls prevnext footer" style="text-align: center; display: grid; margin-bottom: 0px; padding: 0px;">
      <div class="links">
-        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}
+        {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}{% endif %}
       <span class="divider"></span>
-        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}
+        {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}{% endif %}
     </div>
     </div>
 </body>
