@@ -74,7 +74,7 @@ a:not(.btn--remix):visited {
 }
 
 .header .links {
-  padding: 1rem 1rem 1rem;
+  padding: 0px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   justify-content: center;
